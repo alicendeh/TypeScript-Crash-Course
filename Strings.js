@@ -64,17 +64,17 @@
 //   console.log(newArr);
 // });
 
-function forecast(arr) {
-  // Only change code below this line
-  console.log(arr.slice(2));
-  return arr;
+function copyMachine(arr, num) {
+  let newArr = [];
+  for (let i = 0; i < num; i++) {
+    newArr.push([...arr]);
+  }
+  return newArr;
 }
 
-// Only change code above this line
-console.log(
-  forecast(["cold", "rainy", "warm", "sunny", "cool", "thunderstorms"])
-);
+console.log(copyMachine([true, false, true], 4));
 
-// let arr = ["cold", "rainy", "warm", "sunny", "cool", "thunderstorms"];
-
-// console.log(arr.slice(2, 4));
+// let a1 = Array(1, 2, 4);
+// let a2 = Array(3, 5, 7);
+// let newA = Array(a1, a2);
+// console.log(newA);
