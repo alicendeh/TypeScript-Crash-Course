@@ -114,11 +114,34 @@
 
 //-------- Truncate a String---------
 
-function titleCase(str) {
-  let newS = str.split(" ");
-  let count = 1;
+// function titleCase(str) {
+//   let newS = str.split(" ");
+//   let count = 1;
 
-  console.log(newS[count++]);
-}
+//   console.log(newS[count++]);
 
-titleCase("I'm a little tea pot");
+// }
+
+// titleCase("I'm a little tea pot");
+
+//--------Diagonal -------
+// function diagonalDiff(arr) {
+//   let count = 0;
+//   let mult = 1;
+//   arr.forEach((elem) => {
+//     if (elem[count] === "NaN") {
+//       elem[count - 1];
+//       mult *= elem[count];
+//       console.log(mult);
+//       count++;
+//     } else {
+//       console.log("sup");
+
+//       mult *= elem[count];
+//       console.log(mult);
+//       count++;
+//     }
+//   });
+// }
+
+// diagonalDiff([[3], [11, 2, 4], [4, 5, 6], [10, 8, 12]]);
